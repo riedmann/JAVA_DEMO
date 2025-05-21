@@ -1,5 +1,6 @@
 package at.ran.thee3cwi.products.guis;
 
+import at.ran.thee3cwi.products.products.Car;
 import at.ran.thee3cwi.products.products.Product;
 
 import java.util.ArrayList;
@@ -16,6 +17,8 @@ public class GUI1 implements GUI{
             System.out.println("1) show products");
             System.out.println("2) ...");
             int selection = scanner.nextInt();
+
+            Car c = new Car();
 
             if (selection==1){
                 for (Product product:this.products
